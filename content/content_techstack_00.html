@@ -23,7 +23,7 @@
     --tag-bg: rgba(255,255,255,0.06);
   }
 
-  * { margin: 0; padding: 0; box-sizing: border-box; }
+  * { max-width: 1536px; margin: auto; padding: 0; box-sizing: border-box; }
 
   body {
     background: var(--bg);
@@ -32,6 +32,7 @@
     font-weight: 300;
     line-height: 1.7;
     min-height: 100vh;
+
   }
 
   /* ── Noise overlay ── */
@@ -519,6 +520,16 @@
     font-style: normal;
   }
 </style>
+  <!-- audit_centering.py: centering patch -->
+  <style>
+    body {
+      max-width: 860px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  </style>
 </head>
 <body>
 
