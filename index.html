@@ -546,7 +546,7 @@
     // ── Helpers ──────────────────────────────────────────────────
     function formatDate(iso) {
       if (!iso) return '';
-      const d = new Date(iso + 'T00:00:00');
+      const d = new Date(iso.includes('T') || iso.includes(' ') ? iso.replace(' ', 'T') : iso + 'T00:00:00');
       return d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
     }
 
@@ -586,6 +586,8 @@
         const a  = document.createElement('a');
         a.className = 'entry' + (entry.featured ? ' is-featured' : '');
         a.href = entry.href;
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
         a.style.animationDelay = `${i * 40}ms`;
 
         const tagHTML = [
