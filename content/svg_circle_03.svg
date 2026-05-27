@@ -1,0 +1,106 @@
+<svg width="1080" height="1080" viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg"
+  style="display:block; position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);">
+<defs>
+  <radialGradient id="spaceBg" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#0a0a1a"/>
+    <stop offset="100%" stop-color="#000005"/>
+  </radialGradient>
+  <radialGradient id="eventHorizon" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#000000"/>
+    <stop offset="75%" stop-color="#05000f"/>
+    <stop offset="100%" stop-color="#150030"/>
+  </radialGradient>
+  <radialGradient id="discGlow" cx="50%" cy="58%" r="52%">
+    <stop offset="0%" stop-color="#ff6a00" stop-opacity="0"/>
+    <stop offset="40%" stop-color="#ff6a00" stop-opacity="0"/>
+    <stop offset="62%" stop-color="#ff8c00" stop-opacity="0.55"/>
+    <stop offset="72%" stop-color="#ffd700" stop-opacity="0.85"/>
+    <stop offset="78%" stop-color="#ff4500" stop-opacity="0.6"/>
+    <stop offset="88%" stop-color="#c0005a" stop-opacity="0.35"/>
+    <stop offset="100%" stop-color="#300060" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="photonRing" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+    <stop offset="68%" stop-color="#ffffff" stop-opacity="0"/>
+    <stop offset="73%" stop-color="#ffe4b5" stop-opacity="0.9"/>
+    <stop offset="76%" stop-color="#ffffff" stop-opacity="1"/>
+    <stop offset="79%" stop-color="#ffd700" stop-opacity="0.7"/>
+    <stop offset="85%" stop-color="#ff8c00" stop-opacity="0.2"/>
+    <stop offset="100%" stop-color="#ff8c00" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="jetTop" x1="0.5" y1="1" x2="0.5" y2="0">
+    <stop offset="0%" stop-color="#9b59ff" stop-opacity="0.9"/>
+    <stop offset="40%" stop-color="#5e8fff" stop-opacity="0.5"/>
+    <stop offset="100%" stop-color="#3ad9ff" stop-opacity="0"/>
+  </linearGradient>
+  <linearGradient id="jetBottom" x1="0.5" y1="0" x2="0.5" y2="1">
+    <stop offset="0%" stop-color="#9b59ff" stop-opacity="0.9"/>
+    <stop offset="40%" stop-color="#5e8fff" stop-opacity="0.5"/>
+    <stop offset="100%" stop-color="#3ad9ff" stop-opacity="0"/>
+  </linearGradient>
+  <radialGradient id="lensHalo" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#7b2fff" stop-opacity="0"/>
+    <stop offset="55%" stop-color="#7b2fff" stop-opacity="0"/>
+    <stop offset="72%" stop-color="#5500cc" stop-opacity="0.18"/>
+    <stop offset="82%" stop-color="#2200aa" stop-opacity="0.08"/>
+    <stop offset="100%" stop-color="#000033" stop-opacity="0"/>
+  </radialGradient>
+  <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+    <feGaussianBlur stdDeviation="2" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+</defs>
+
+<rect x="0" y="0" width="1080" height="1080" fill="url(#spaceBg)"/>
+
+<g fill="#ffffff" filter="url(#glow)">
+  <circle cx="80" cy="60" r="1.2" opacity="0.8"/>
+  <circle cx="200" cy="130" r="0.8" opacity="0.6"/>
+  <circle cx="950" cy="80" r="1.4" opacity="0.9"/>
+  <circle cx="1020" cy="200" r="0.7" opacity="0.5"/>
+  <circle cx="60" cy="400" r="1.0" opacity="0.7"/>
+  <circle cx="140" cy="700" r="0.9" opacity="0.6"/>
+  <circle cx="30" cy="900" r="1.3" opacity="0.8"/>
+  <circle cx="1040" cy="600" r="1.1" opacity="0.7"/>
+  <circle cx="980" cy="900" r="0.8" opacity="0.5"/>
+  <circle cx="820" cy="50" r="1.0" opacity="0.6"/>
+  <circle cx="300" cy="30" r="0.7" opacity="0.5"/>
+  <circle cx="700" cy="25" r="1.2" opacity="0.7"/>
+  <circle cx="150" cy="250" r="0.6" opacity="0.4"/>
+  <circle cx="920" cy="320" r="0.9" opacity="0.6"/>
+  <circle cx="50" cy="550" r="1.1" opacity="0.7"/>
+  <circle cx="1050" cy="750" r="0.8" opacity="0.5"/>
+  <circle cx="400" cy="1050" r="1.0" opacity="0.6"/>
+  <circle cx="650" cy="1060" r="0.7" opacity="0.4"/>
+  <circle cx="880" cy="1020" r="1.3" opacity="0.8"/>
+  <circle cx="250" cy="980" r="0.8" opacity="0.5"/>
+</g>
+
+<polygon points="540,200 510,10 570,10" fill="url(#jetTop)" opacity="0.7"/>
+<polygon points="540,200 495,0 585,0" fill="url(#jetTop)" opacity="0.35"/>
+<polygon points="540,880 510,1070 570,1070" fill="url(#jetBottom)" opacity="0.7"/>
+<polygon points="540,880 495,1080 585,1080" fill="url(#jetBottom)" opacity="0.35"/>
+
+<circle cx="540" cy="540" r="480" fill="url(#lensHalo)"/>
+<circle cx="540" cy="540" r="430" fill="url(#discGlow)"/>
+<circle cx="540" cy="540" r="370" fill="url(#photonRing)"/>
+<circle cx="540" cy="540" r="340" fill="url(#eventHorizon)"/>
+<circle cx="540" cy="540" r="342" fill="none" stroke="#7b2fff" stroke-width="3" opacity="0.35"/>
+<circle cx="540" cy="540" r="348" fill="none" stroke="#5e00cc" stroke-width="1.5" opacity="0.2"/>
+
+<line x1="540" y1="200" x2="0" y2="200" stroke="#ffd700" stroke-width="2" opacity="0.85"/>
+<line x1="540" y1="880" x2="1080" y2="880" stroke="#ffd700" stroke-width="2" opacity="0.85"/>
+
+<text
+  x="540" y="540"
+  font-size="62"
+  font-family="Georgia, serif"
+  text-anchor="middle"
+  dominant-baseline="central"
+  fill="#e8d5ff"
+  opacity="0.92"
+  letter-spacing="2"
+>Me, Myself, and I</text>
+
+<circle cx="540" cy="540" r="200" fill="none" stroke="#4400aa" stroke-width="40" opacity="0.12"/>
+</svg>
